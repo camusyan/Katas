@@ -25,6 +25,6 @@ class ColorfulNumber:
         return total
 
     def is_colorful(self):
-        # all_product = [self.combinations_product(x) for x in self.all_combinations_generator(self.number_list)]
-        all_product = [self.combinations_product(x) for x in self.all_consecutive_combinations_generator(self.number_list)]
-        return len(all_product) == len(set(all_product))
+        # all_products = [self.combinations_product(x) for x in self.all_combinations_generator(self.number_list)]
+        all_products = [self.combinations_product(x) for x in self.all_consecutive_combinations_generator(self.number_list)]
+        return len(all_products) == len(set(all_products))
