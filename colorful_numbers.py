@@ -14,8 +14,8 @@ class ColorfulNumber:
     @staticmethod
     def all_consecutive_combinations_generator(iterable):
         for length in range(1, len(iterable) + 1):
-            for j in range(len(iterable) + 1 - length):
-                yield iterable[j:j+length]
+            for start in range(len(iterable) + 1 - length):
+                yield iterable[start:start+length]
 
     @staticmethod
     def combinations_product(iterable):
